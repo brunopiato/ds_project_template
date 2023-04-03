@@ -9,35 +9,37 @@ This repository is a template to Data Science Projects with the main folder stru
 ## The folder structure
 The directories structure is as follows:
 
-```bash
+```
 .
-├── data
+├── data                        <- Data used in the project
 │   ├── external
 │   ├── interim
 │   ├── processed
 │   └── raw
-├── docs
-├── models
-├── notebooks
-├── README.md
-├── references
+├── docs                        <- A default Sphinx project; see sphinx-doc.org for details
+├── models                      <- Models used in production
+├── notebooks                   <- Notebooks used to explore and generate models
+├── README.md                   <- The top-level README for developers using this project.
+├── references                  <- Data dictionaries, manuals, and all other explanatory materials.
 │   └── folder_structure.txt
-├── reports
+├── reports                     <- Generated analysis as HTML, PDF, LaTeX, PNG, JPG, etc.
 │   └── figures
-├── requirements.txt
-└── src
-    ├── data
+├── requirements.txt            <- The requirements file for reproducing the analysis environment, e.g.
+│                                  generated with 'pip freeze > requirements.txt' or 'pipreqsnb' and 'pipreqs'
+└── src                         <- Source code for use in this project.
+    ├── data                    <- Scripts to download or generate data
     │   ├── __init__.py
     │   └── make_dataset.py
-    ├── features
+    ├── features                <- Scripts to turn raw data into features for modeling
     │   ├── build_features.py
     │   └── __init__.py
-    ├── __init__.py
-    ├── models
+    ├── __init__.py             <- Makes src a Python module
+    ├── models                  <- Scripts to train models and then use trained models to make
+    │   │                          predictions
     │   ├── __init__.py
     │   ├── predict_model.py
     │   └── train_model.py
-    └── visualization
+    └── visualization           <- Scripts to create exploratory and results oriented visualizations
         ├── __init__.py
         ├── plot_settings.py
         └── visualize.py
